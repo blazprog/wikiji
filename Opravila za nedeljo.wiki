@@ -1,0 +1,2 @@
+* [X] nova verzija plac in potnih nalogov na Relax
+* [X] porodniski dopust in placilan lista

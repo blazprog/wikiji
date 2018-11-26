@@ -1,0 +1,56 @@
+** Makro **
+qd start recording to register d
+...     your complex series of commands
+q   stop recording
+@d  execute your macro
+@@  execute your macro again 
+
+** Registri **
+Registers in Vim let you run actions or commands on text stored within them. 
+"a to access a register a 
+"kyy copy current line in register k
+"Kyy append to a register use capital letter
+"kp paste context of register
+"+p to paste from system clipboard on Linux 
+"*p To paste from system clipboard on Windows (or from "mouse highlight" clipboard on Linux) 
+:reg To access all  **currently defined registers type 
+ctrl-R + register name Pasting text in command line 
+
+** Datoteke **
+cd  %:p:h sprememba delovnega direktorija na direktorij v katerem je datoteka 
+:echo @%  Get the name of the current file 
+Ctrl-R then % in insert mode to insert the name of the current file.
+
+** Premik cursorja **
+zz - move current line to the middle of the screen
+zt - move current line to the top of the screen
+zb - m
+
+** Zgodovina ukazov **
+q: za zgodovino ukazov v normal mode
+                        
+### Wrapping lines
+:set wrap  //wrap lines longer than window
+:set nowrap:
+:set linebreak  //It will break lines on characters included in your 'breakat' option, which
+includes a space by default.
+The following will do a line wrap without breaking any words and preserve the shorter lines.
+:set formatoptions+=w
+:set tw=80
+gggqG
+To try and format the current paragraph try the follwoing:
+:nnoremap Q gqip
+
+** preveri xml sintakso **
+!xmllint --noout %
+
+** spell checking **
+                        
+| Moja | Prva | Tabela |
+|------|------|--------|
+| R1.1 | R1.2 | R1.3   |
+| R2.1 | R2.2 | R2.3   |
+
+
+
+
