@@ -9,21 +9,21 @@ q::   stop recording
 == Registri == 
 
 Registers in Vim let you run actions or commands on text stored within them. 
-"a :: to access a register a 
+"a   :: to access a register a 
 "kyy :: copy current line in register k
 "Kyy ::  append to a register use capital letter
-"kp :: paste context of register
-"+p :: to paste from system clipboard on Linux 
-"*p :: To paste from system clipboard on Windows (or from "mouse highlight" clipboard on Linux) 
+"kp  :: paste context of register
+"+p  :: to paste from system clipboard on Linux 
+"*p  :: To paste from system clipboard on Windows (or from "mouse highlight" clipboard on Linux) 
 :reg ::  To access all  **currently defined registers type 
 ctrl-R + register name :: Pasting text in command line 
 
 
 == Datoteke ==
 
-cd  %:p:h :: sprememba delovnega direktorija na direktorij v katerem je datoteka 
+cd  %:p:h:: sprememba delovnega direktorija na direktorij v katerem je datoteka 
 :echo @% ::  Get the name of the current file 
-Ctrl-R then % :: in insert mode to insert the name of the current file.
+Ctrl-R then %:: in insert mode to insert the name of the current file.
 
 ** Premik cursorja **
 zz :: move current line to the middle of the screen
