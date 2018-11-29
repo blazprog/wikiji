@@ -1,4 +1,7 @@
-[[Opravila za nedeljo]]
+= Programiranje =
+
+[[Opravila]]
 [[Vim ukazi]]
 [[Linux administracija]]
 [[Postgress]]
+[[Python]]

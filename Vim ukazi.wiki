@@ -1,3 +1,11 @@
+= Contents =
+        - [[#Makro|Makro]]
+        - [[#Registri|Registri]]
+        - [[#Datoteke|Datoteke]]
+        - [[#Wrapping lines|Wrapping lines]]
+        - [[#preveri xml sintakso|preveri xml sintakso]]
+        - [[#spell checking|spell checking]]
+
 == Makro== 
 
 qd:: start recording to register d
@@ -37,7 +45,7 @@ q: ::  za zgodovino ukazov v normal mode
 
 set wrap ::  wrap lines longer than window
 set nowrap :: nowrapping
-:set linebreak  :: It will break lines on characters included in your 'breakat' option, which
+set linebreak  :: It will break lines on characters included in your 'breakat' option, which
 includes a space by default.
 set formatoptions+=w :: The following will do a line wrap without breaking any words 
                          and preserve the shorter lines.
@@ -50,7 +58,7 @@ gggqG :: reformat text
 !xmllint --noout % ::
 
 
-== spell checking == ==
+== spell checking == 
                         
 | Moja | Prva | Tabela |
 |------|------|--------|

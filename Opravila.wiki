@@ -1,0 +1,4 @@
+Odoo opravila Relax
+    * [ ] Na partnerja privzet artikel
+    * [ ] Preveri zakaj se ne da instalirat analiticno knjigovodstvo
+    * [ ] Analiticni konto na vrstico prejetega racuna

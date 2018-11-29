@@ -1,4 +1,6 @@
-** Uporava scp **
+[[Tar command]]
+
+== Uporava scp ==
 Computer A -- local workstation
 Computer B -- remote machine accsesable over ssh
 
@@ -19,3 +21,8 @@ Computer B -- remote machine accsesable over ssh
     but to port 2222. All connections to port 2222 on ComputerB get forwarded to port 22 (default ssh port) on ComputerA. 
     Thus, by tunneling backwards over the existing ssh connection, it doesn't matter that ComputerA 
     is behind an NAT firewall.
+   
+== Pravice na datotekah chmod ==
+== Wget ==
+== Finding files ==
+

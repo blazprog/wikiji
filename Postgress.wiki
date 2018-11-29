@@ -9,18 +9,17 @@ ls -l
 == Kako ustaviti proces ==
 
 === force disconnect all other clients from the database to be renamed ===
-{{{
+{{{ sql
 SELECT pg_terminate_backend( pid )
 FROM pg_stat_activity
 WHERE pid <> pg_backend_pid( )
 	AND datname = 'name of database';
-
 -- rename the database (it should now have zero clients)
 ALTER DATABASE "name of database" RENAME TO "new name of database";
 }}}
 
 === Matjazeva verzija ===
-{{{
+{{{ sql
 SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity
 WHERE pg_stat_activity.datname = 'relax_produkcija'
@@ -29,6 +28,7 @@ AND pid <> pg_backend_pid(); = Koristni ukazi v psql ==
 * \connect <dbname> :: zamenja podatkovno bazo 
 * \dt :: list tables
 }}}
+
 
 == Console backup ==
 == Psql do baze na drugem serverju ==
